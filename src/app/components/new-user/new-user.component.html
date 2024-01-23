@@ -1,0 +1,82 @@
+<section class="background">
+<fieldset class="new-user">
+      <legend>REGISTER</legend>
+      <form action="" class="registro" (ngSubmit)="registraUsuario()" [formGroup]="newUser">
+  
+          <div class="campo">
+              <label for="usuario">Username:</label>
+              <input type="text" formControlName="username">
+          </div>
+  
+          <div class="error"
+              *ngIf="validar('username', 'required')">
+              <span>Field is required</span>
+            </div>
+            <div class="error"
+              *ngIf="validar('username', 'minlength')">
+              <span>Minimun 3 characters</span>
+            </div>
+  
+          <div class="campo">
+              <label for="">Password:</label>
+              <input type="password" formControlName="password">
+          </div>
+  
+          <div class="error"
+              *ngIf="validar('password', 'required')">
+              <span>Field is required</span>
+            </div>
+            <div class="error"
+              *ngIf="validar('password', 'minlength')">
+              <span>Minimun 3 characters</span>
+            </div>
+  
+          <div class="campo">
+              <label id="verify-pw" for="">Verify Password:</label>
+              <input type="password" formControlName="confirmPassword">
+          </div>
+  
+          <div class="error"
+              *ngIf="validar('confirmPassword', 'required')">
+              <span>Field is required</span>
+            </div>
+            <div class="error"
+              *ngIf="newUser.hasError('notSame') && newUser.controls['confirmPassword'].touched">
+              <span>Passwords don't match</span>
+            </div>
+  
+            <legend id="avatar-legend">CHOOSE YOUR AVATAR</legend>
+            <section class="avatar-selector">
+  
+              <div class="avatar-field">
+                <p>Warrior</p>
+                <input type="radio" id="option1" value="option1" formControlName="avatar" checked>
+                <label for="option1">
+                  <img src="/assets/avatars/warrior-avatar.png" alt="Warrior" class="avatar-img">
+                </label>
+              </div>
+  
+              <div class="avatar-field">
+                <p>Mage</p>
+                <input type="radio" id="option2" value="option2" formControlName="avatar">
+                <label for="option2">
+                  <img src="/assets/avatars/mage-avatar.png" alt="Mage" class="avatar-img">
+                </label>
+              </div>
+  
+              <div class="avatar-field">
+                <p>Rogue</p>
+                <input type="radio" id="option3" value="option3" formControlName="avatar">
+                <label for="option3">
+                  <img src="/assets/avatars/ranger-avatar.png" alt="Mage" class="avatar-img">
+                </label>
+              </div>
+            </section>
+            
+            <div class="buttons">
+              <input type="submit" id="submit" value="Create Account">
+              <input type="button" id="back" value="Back to Login" routerLink="/login">
+            </div>
+      </form>
+</fieldset>
+</section>

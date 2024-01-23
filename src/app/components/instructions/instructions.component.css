@@ -1,0 +1,202 @@
+.how-to-play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    font-family: ""Palatino Linotype", "Book Antiqua", Palatino, serif";
+    font-size: 2.5rem;
+    background-image: url("/assets/game-assets/backgrounds/naberoa_path.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+   
+}
+
+/* .titles{
+    font-family: "Abhaya Libre";
+    font-size: 4.5rem;
+    font-weight: 100;
+} */
+
+.tips-div{
+    display: flex;
+    flex-direction: column;
+}
+.text-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin:0rem;
+   
+}
+.image-part{
+    margin: 0rem;
+    background-color: rgb(12, 12, 12,1);
+
+}
+.image-part h3{
+    font-family: 'Raleway', sans-serif;
+    margin: 1rem;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+}
+.txt-first-part{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(12, 12, 12,0.8);
+}
+.txt-first-part h2{
+    font-size: 5.5rem;
+    font-weight: normal;
+    margin: 12rem 5rem 3rem 5rem;
+}
+.txt-first-part hr{
+    width: 70%;
+    margin: 0rem 5rem;
+}
+.txt-first-part p{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 5rem 3rem 5rem;
+}
+.actions-padre{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    margin: auto 5rem;
+}
+.single-actions{
+    display: flex;
+    flex-direction: row;
+}
+/* .text-image p{
+    padding: 0 2rem;
+    text-align: center;
+    margin: auto 0;
+} */
+
+/* .text-image img{
+    border-radius: 2rem;
+    height: 30rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+ */
+.actions{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    width: 30%;
+    font-size: 2rem;
+}
+.actions p{
+    margin-right: 0rem;
+    height: 50%;
+}
+.actions img{
+    margin: 0rem;
+    width: 30%
+}
+.img-actions{
+    display: flex;
+    margin-top: 3rem;
+    padding-left: 2rem;
+}
+.mc{
+    width: 20%;
+}
+
+#img-2{
+    width: 49.1%;
+    opacity: .9;
+}
+.txt-second-part{
+    background-color: rgba(12, 12, 12, 0.932);
+
+}
+.txt-second-part p{
+    margin: auto 4rem;
+}
+.txt-third-part{
+    background-color: rgba(12, 12, 12, 0.932);
+}
+.txt-third-part p{
+    font-family: 'Raleway', sans-serif;
+    margin: auto 3rem;
+    font-size: 2rem;
+}
+.actions-buffed-icons{
+    display: flex;
+}
+
+@media (max-width: 400px){
+    .text-image{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .txt-first-part h2{
+        font-size: 3rem;
+        font-weight: normal;
+        margin: 2rem 3rem 2rem 3rem;
+    }
+    .txt-first-part hr{
+        width: 70%;
+        margin: 0rem 3rem;
+    }
+    .txt-first-part p{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin: 2rem 3rem 3rem 3rem;
+    }
+    .image-part img{
+        width: 100%;
+    }
+    .image-part h3{
+        font-family: 'Raleway', sans-serif;
+        margin: 1rem;
+        padding: 0rem;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    
+    }
+
+    #img-2{
+       
+        width: 100%;
+    }
+    .txt-third-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt-third-part p{
+        font-family: 'Raleway', sans-serif;
+        margin: 2rem 3rem 3rem 3rem;        
+        font-size: 1.5rem;
+    }
+    .txt-third-part img{
+        width: 50%;
+    }
+    .mc{
+        height: 0rem;
+        width: 0rem;
+    }
+    .img-actions{
+        flex-direction: column;
+    }
+    .single-actions{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .actions{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,181 @@
+.background{
+    background-image: url('src/assets/characterSec.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 8rem;
+}
+
+.new-user{
+    height: auto;
+    width: 30%;
+    margin: 15rem auto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, 0.469);
+    font-weight: bold;
+}
+
+legend{
+    font-family: 'Abhaya Libre';
+}
+
+.new-user legend{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.registro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.campo label{
+    width: 40%;
+    margin-right: auto;
+    
+}
+
+.campo input{
+    width: 50%;
+    margin-left: auto;
+}
+
+.error{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(235, 153, 153);
+    color: rgb(136, 3, 3);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#submit{
+    margin-top: 1rem;
+}
+
+.avatar-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.avatar-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-field img{
+    width: 75%;
+    border-radius: 25%;
+    border: 3px solid rgb(0, 0, 0, 0);
+}
+.avatar-field img:hover{
+    border: 3px solid white;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.avatar-field img:active {
+    cursor: pointer;
+}
+
+input[type=radio]{
+    display: hidden;
+}
+
+
+.avatar-field P{
+    margin: 0rem;
+    padding: 1rem 0 .5rem 0;
+}
+
+#avatar-legend{
+    margin-top: 2rem;
+}
+
+input[type="radio"]{
+    width: 0rem;
+    height: 0rem;
+    margin: 0rem;
+    opacity: 0%;
+}
+
+.avatar-field label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=radio]:checked + label > img {
+    border: 3px solid #0075ff;
+  }
+
+.buttons input{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 525;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+@media (max-width: 400px){
+    .background{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-user{
+        width: 80%;
+        margin: 12rem 0rem 5rem 0rem;
+    }
+    .new-user legend{
+        font-size: 1.8rem;    
+    }
+    .campo label, .registro span{
+        font-size: 1.5rem;
+    }
+    .campo input{
+        width: 58%;
+    }
+    #avatar-legend{
+        font-size: 1.7rem;
+    }
+    #verify-pw{
+        font-size: 1.4rem;
+    }
+    .buttons input{
+        font-size: 1.2rem;
+    }
+    .text{
+        width: 80%;
+    }
+    .text h2{
+        font-size: 3rem;
+        margin: 3rem 0rem 2rem 0rem;
+    }
+    .text p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}

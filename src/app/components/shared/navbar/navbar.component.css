@@ -1,0 +1,177 @@
+.enlace{   
+    color: rgba(255, 255, 255, 0.596);
+    display: inline-flex;
+    margin: 0.6rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    font-family: 'Abhaya Libre';
+    letter-spacing: 0;
+    transition: all 0.5s;
+    font-size: 2rem;
+}
+.enlace:hover{
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+}
+
+
+.nav-boton{
+    display: flex;
+    justify-content: center;
+    width:12%;
+    height: 80%;
+    margin-right: 2rem;
+    margin-top: .3rem;
+    border-radius: 0.5rem;
+}
+.cabecera{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    transition: all 4s ease-out;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 100%;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 2rem;
+}
+.background-img-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    opacity: 0;
+    transition: opacity 0.3s; /* Add a transition for opacity */
+    z-index: -1;
+  }
+  .background-img-navbar img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+.cabecera.scrolled .background-img-navbar{
+   opacity:0.7;
+}
+.menu-button, .close-menu{
+    display: none;
+}
+@media (max-width: 800px){
+   
+    /*
+    .navbar{
+        display: none;
+    } */
+    .cabecera{
+        height: 100%;
+        justify-content: end;
+    }
+    .menu-button{
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 5%;
+        border: none;
+        font-size:3rem;
+        color: rgb(207, 207, 207);
+        margin: 2rem 2rem 0rem 0rem;
+        background-color: transparent;
+        opacity: 1;
+        visibility: visible;
+        z-index: 9999999;
+    }
+
+    .menu-button.not-visible{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.966);
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar.not-visible{
+        opacity:0;
+        height: 10%;
+        visibility: hidden;
+    }
+    .nav-list{
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        margin-top: 6rem;
+        height: 30%;
+    }
+    .nav-boton{
+        height: auto;
+        display: block;
+        width: 100%;
+        margin: 0rem;
+        justify-content: end;
+        align-items: end;
+    }
+    .enlace{
+        justify-content: end;
+        height: auto;
+        font-size: 1.8rem;
+        width: 50%;
+        display: block;
+        text-align: initial;
+        margin-left: 2rem;
+    }
+    .close-menu{
+        display: block;
+        height: 5%;
+        width: 100%;
+        font-size:3rem;
+        color: rgb(207, 207, 207);
+        margin-top: 1rem;
+        background-color: transparent;
+        border: none;
+        z-index: 999999;
+    }
+    .enlace:hover{
+        border: none;
+        letter-spacing: normal;
+    }
+}
+@media (max-width: 400px){
+    .enlace{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .enlace:hover{
+        border: none;
+        letter-spacing: normal;
+    }
+    .cabecera{
+        width: 35%;
+        margin-left: 25.2rem;
+        height: 10vh;
+    }
+    .menu-button{
+        margin-right: 4rem;
+    }
+    .cabecera.not-collide{
+        height: 10vh;
+    }
+}

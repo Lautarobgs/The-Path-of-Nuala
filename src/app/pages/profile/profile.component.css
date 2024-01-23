@@ -1,0 +1,51 @@
+.user-profile{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assets/tavern-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16rem;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.user-content{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16rem;
+}
+
+.user-info{
+    width: 40%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-scores{
+    width: 60%;
+    margin-left: auto;
+}
+@media (max-width: 400px){
+  .user-content{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .user-info{
+    margin: 0rem;
+    width: 100%;
+  }
+  .user-scores{
+    margin: 3rem 0rem 2rem 3rem;
+    width: 100%;
+  }
+}

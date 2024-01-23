@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "usuario": "Admin",
+      "constraseña": "admin",
+      "avatar": "assets/avatars/ranger-avatar.png",
+      "partidas": [
+        {
+          "fecha": "2023-12-03T03:29:56.432Z",
+          "personaje": "Leroy",
+          "sprite": "/assets/game-assets/hero-mage.png",
+          "clase": "Mage",
+          "nivel": 3,
+          "ultimoMapa": "The tunnels of whispering stakes",
+          "ultimoEnemigo": "Chundy Nimblefingers",
+          "puntaje": 200
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
